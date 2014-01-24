@@ -1,5 +1,5 @@
 class StringCalculator
   def add(string)
-    0
+    string.length == 0 ? 0 : 1
   end
 end
