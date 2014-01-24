@@ -17,4 +17,9 @@ describe StringCalculator do
   it 'can add up strings with multiple numbers' do
     expect(@calculator.add("1,2,7")).to eq 10
   end
+
+  it 'can be initialized with any delimiter' do
+    calculator_with_new_delimiter = StringCalculator.new("*")
+    expect(calculator_with_new_delimiter.add("1*2*7")).to eq 10
+  end
 end
