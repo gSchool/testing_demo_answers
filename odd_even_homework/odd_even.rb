@@ -4,7 +4,21 @@ class OddEven
   end
 
   def run
-    1.upto(@upper_bound).to_a
+    result = []
+    1.upto(@upper_bound).each do |number|
+      if is_even?(number)
+        result << "Even"
+      else
+        result << number
+      end
+    end
+    result
+  end
+
+  private
+
+  def is_even?(number)
+    number % 2 == 0
   end
 
 end
