@@ -9,7 +9,7 @@ class OddEven
       if is_even?(number)
         result << "Even"
       else
-        result << number
+        result << "Odd"
       end
     end
     result
@@ -20,5 +20,4 @@ class OddEven
   def is_even?(number)
     number % 2 == 0
   end
-
 end
