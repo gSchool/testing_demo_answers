@@ -13,4 +13,8 @@ describe StringCalculator do
   it 'returns 1 for the string "1"' do
     expect(@calculator.add("1")).to eq 1
   end
+
+  it 'can add up strings with multiple numbers' do
+    expect(@calculator.add("1,2,7")).to eq 10
+  end
 end

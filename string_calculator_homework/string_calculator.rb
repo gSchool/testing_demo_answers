@@ -1,5 +1,9 @@
 class StringCalculator
   def add(string)
-    string.length == 0 ? 0 : 1
+    sum = 0
+    string.split(",").each do |number|
+      sum = number.to_i + sum
+    end
+    sum
   end
 end
