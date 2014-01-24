@@ -14,4 +14,8 @@ class NumericCalculator
   def get
     @memory
   end
+
+  def clear
+    @memory = 0
+  end
 end

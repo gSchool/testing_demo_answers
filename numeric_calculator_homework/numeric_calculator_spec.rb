@@ -17,4 +17,11 @@ describe NumericCalculator do
     @calculator.save(45)
     expect(@calculator.get).to eq(45)
   end
+
+  it 'can clear the memory' do
+    @calculator.save(45)
+    @calculator.clear
+
+    expect(@calculator.get).to eq(0)
+  end
 end
