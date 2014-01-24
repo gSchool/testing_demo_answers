@@ -5,6 +5,7 @@ describe NumericCalculator do
   before do
     @calculator = NumericCalculator.new
   end
+
   it 'adds two numbers together' do
     expect(@calculator.add(1,2)).to eq(3)
   end
@@ -23,5 +24,9 @@ describe NumericCalculator do
     @calculator.clear
 
     expect(@calculator.get).to eq(0)
+  end
+
+  it 'defaults the memory to 0' do
+    expect(@calculator.get).to eq 0
   end
 end
